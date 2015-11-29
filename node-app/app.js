@@ -7,9 +7,9 @@ var awsIot = require('aws-iot-device-sdk'),
 app.get('/publish-message', function(req, res) {
   router.publishMessage(req, res, device);
 });
-app.get('/data', router.babyTrackData);
+app.get('/', router.babyTrackData);
 
-var server = app.listen(3700);
+var server = app.listen(80);
 
 var device = awsIot.device({
   keyPath: '../cert/baby-track-pad-private-key.pem',
@@ -28,7 +28,7 @@ device.on('message', function(topic, payload) {
   console.log('message', topic, payload.toString());
 });
 
-beacon.advertiseUrl('http://' + router.getLocalIP()[0] + '/data');
+beacon.advertiseUrl('http://' + router.getLocalIP());
 
 if (process.send) {
   process.send('online');

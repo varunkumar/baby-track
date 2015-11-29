@@ -25,6 +25,7 @@ exports.publishMessage = function(req, res, device) {
     button4: queryString.button4,
     ping: queryString.ping
   };
+  e.date = moment().format('DD-MMM-YYYY');
   device.publish('topic/baby-track', JSON.stringify(e));
   res.send('Done');
 };
