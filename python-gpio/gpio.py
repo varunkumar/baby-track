@@ -53,7 +53,8 @@ while True:
         GPIO.output(green_led, 0)
         
         buttonPressed = -1
-        
+    
+    # Give 100 ms delay to prevent triggering of multiple events of single button press
     time.sleep(0.1)
     
 GPIO.cleanup()
