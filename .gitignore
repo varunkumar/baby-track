@@ -3,3 +3,4 @@ node_modules
 cert
 secret.js
 .tmp
+npm-debug.log
