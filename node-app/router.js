@@ -7,7 +7,7 @@ exports.babyTrackData = function(req, res) {
   my_sheet.getRows(3, {
     'query': '_cn6ca = "' + moment().format('DD-MMM-YYYY') + '"'
   }, function(err, rows) {
-    if (err || rows.length < 0) {
+    if (err || rows.length <= 0) {
       console.log(err);
       res.json({});
       return;
