@@ -4,3 +4,4 @@ cert
 secret.js
 .tmp
 npm-debug.log
+README-local.md
