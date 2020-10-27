@@ -6,6 +6,6 @@
     "eddystone-beacon": "1.0.4",
     "express": "4.13.3",
     "google-spreadsheet": "1.0.1",
-    "moment": "2.10.6"
+    "moment": "2.29.1"
   }
 }
