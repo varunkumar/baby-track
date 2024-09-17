@@ -4,7 +4,7 @@
   "dependencies": {
     "aws-iot-device-sdk": "^2.2.13",
     "eddystone-beacon": "1.0.4",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "google-spreadsheet": "^4.1.1",
     "moment": "^2.29.4"
   }
