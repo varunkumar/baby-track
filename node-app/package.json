@@ -2,7 +2,7 @@
   "name": "baby-track",
   "version": "1.0.0",
   "dependencies": {
-    "aws-iot-device-sdk": "^2.2.13",
+    "aws-iot-device-sdk": "^2.2.15",
     "eddystone-beacon": "1.0.4",
     "express": "^4.21.0",
     "google-spreadsheet": "^4.1.1",
